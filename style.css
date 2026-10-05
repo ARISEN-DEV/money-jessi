@@ -1,0 +1,21 @@
+body { font-family: system-ui, sans-serif; background: #eef2f5; margin: 0; color: #222; }
+main { max-width: 620px; margin: 0 auto; padding: 20px; }
+h1 { text-align: center; }
+button { padding: 10px 16px; margin: 4px; border: 0; border-radius: 6px; background: #2b7a4b; color: #fff; font-size: 1rem; cursor: pointer; }
+button.secondary { background: #6b7785; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+.card { background: #fff; border-radius: 10px; padding: 16px; margin: 12px 0; box-shadow: 0 1px 4px rgba(0,0,0,.15); }
+.stats { display: flex; justify-content: space-between; }
+#menu { text-align: center; }
+.denom { display: flex; align-items: center; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #eee; }
+.denom .img-slot { width: 130px; display: flex; justify-content: center; }
+.bill-img { width: 120px; height: 56px; object-fit: cover; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,.4); }
+.coin-img { width: 40px; height: 40px; object-fit: cover; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,.4); }
+.fallback { display: flex; align-items: center; justify-content: center; color: #fff; font-weight: bold; }
+.denom .label { flex: 1; padding: 0 8px; font-weight: bold; }
+.denom .label.coin { color: #a06a00; }
+.denom .qty { width: 30px; text-align: center; font-weight: bold; }
+.denom button { padding: 4px 12px; margin: 0 2px; }
+#feedback { font-weight: bold; min-height: 1.4em; }
+#feedback.ok { color: #2b7a4b; }
+#feedback.bad { color: #c0392b; }

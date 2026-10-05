@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego del Cajero</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Juego del Cajero</h1>
+
+    <section id="menu">
+      <p>Elige la dificultad:</p>
+      <button data-level="facil">Fácil (montos fijos)</button>
+      <button data-level="dificil">Difícil (montos aleatorios 20 - 1500)</button>
+    </section>
+
+    <section id="game" hidden>
+      <div class="stats">
+        <span>Nivel: <b id="level"></b></span>
+        <span>Aciertos: <b id="score">0</b></span>
+        <span>Racha: <b id="streak">0</b></span>
+      </div>
+
+      <div class="card">
+        <h2>Cliente</h2>
+        <p>Total a pagar: <b id="price"></b></p>
+        <p>El cliente entrega: <b id="paid"></b></p>
+      </div>
+
+      <div class="card">
+        <h2>Cajero: arma el vuelto</h2>
+        <div id="denoms"></div>
+        <p>Vuelto armado: <b id="total">0</b></p>
+        <button id="check">Entregar vuelto</button>
+        <button id="clear" class="secondary">Limpiar</button>
+        <p id="feedback" role="status"></p>
+        <button id="next" hidden>Siguiente cliente</button>
+      </div>
+
+      <button id="back" class="secondary">Cambiar dificultad</button>
+    </section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
